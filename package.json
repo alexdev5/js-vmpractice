@@ -4,7 +4,9 @@
   "description": "JS course to Vladilen Minin",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/alexdev5/js-vmpractice/issues"
   },
-  "homepage": "https://github.com/alexdev5/js-vmpractice#readme"
+  "homepage": "https://github.com/alexdev5/js-vmpractice#readme",
+  "private": true,
+  "devDependencies": {
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  }
 }
