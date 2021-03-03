@@ -11,6 +11,7 @@
   "rules": {
     "arrow-parens": "off",
     "linebreak-style": "off",
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "eol-last": "off"
   }
 }

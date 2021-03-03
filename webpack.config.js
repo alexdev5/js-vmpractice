@@ -12,7 +12,7 @@ const filename = ext => isProd ? `bundle.${ext}` : `bundle.[fullhash].${ext}`;
 const jsloaders = () =>{
   const loaders = [
     {
-      loader: "babel-loader",
+      loader: 'babel-loader',
       options: {
         presets: ['@babel/preset-env'],
       },
@@ -28,11 +28,11 @@ const jsloaders = () =>{
 module.exports = {
   // Директория исходников
   context: path.resolve(__dirname, 'src'),
-  mode: "development",
+  mode: 'development',
   // Входная точка для приложения (объект/строка)
   entry: ['@babel/polyfill', './index.js'],
   // (объект)
-  output:{
+  output: {
     // будущий файл, который будет подключаться в браузер
     filename: filename('js'),
     // строчка с абсолютным путем
@@ -44,18 +44,18 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@core': path.resolve(__dirname, 'src/core'),
-    }
+    },
   },
   devServer: {
     // v5 - обновление стилей работает с коробки
-    port:3000,
-    //hot: isDev,
+    port: 3000,
+    // hot: isDev,
     overlay: true,
     open: true,
   },
-  devtool: isDev ? "source-map" : false,
+  devtool: isDev ? 'source-map' : false,
   // массив плагинов
-  plugins:[
+  plugins: [
     new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
       template: 'index.html',
@@ -63,15 +63,15 @@ module.exports = {
       minify: {
         removeComments: isProd,
         collapseWhitespace: isProd,
-      }
+      },
     }),
     new CopyPlugin({
-      patterns:[
+      patterns: [
         {
           from: path.resolve(__dirname, 'src/favicon.ico'),
           to: path.resolve(__dirname, 'dist')
         },
-      ]
+      ],
     }),
     new MiniCssExtractPlugin({
       filename: filename('css')
@@ -86,15 +86,15 @@ module.exports = {
         use: [
           // берем лодер с плагина
           MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader",
+          'css-loader',
+          'sass-loader',
         ],
       },
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: jsloaders(),
-      }
+      },
     ],
   },
 };
