@@ -1,0 +1,104 @@
+.db{
+  &__header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: $db-height-header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px 2px rgba(60,64, 67,0.15);
+    z-index: 100;
+  }
+  &__new{
+    margin-top: $db-height-header;
+    padding: 1.5rem;
+    background: #dadce0;
+  }
+  &__create{
+    width: 160px;
+    height: 160px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #dadce0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    &:hover{
+      color: green;
+      border-color: green;
+    }
+  }
+
+  &__view{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+  &__table{
+    padding: 1rem;
+  }
+
+  &__list-header{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list{
+    @include clear-list;
+  }
+
+  &__record{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px 12px 12px;
+    border-radius: 20px;
+    //border-bottom: 1px solid $border-color;
+    @include trans(background);
+    &:last-child{
+      border: none;
+    }
+    &:hover{
+      background: rgba(195,208,139, .4);
+    }
+
+    a{
+      font-size: 14px;
+      position: relative;
+      display: inline-block;
+      @include trans(color);
+
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 0;
+        background: green;
+        bottom: -2px;
+        left: 0;
+        @include trans(width);
+      }
+      &:hover{
+        color: green;
+      }
+      &:hover:after{
+        width: 100%;
+      }
+    }
+  }
+}
+
+a{
+  text-decoration: none;
+  color: #202124;
+}
