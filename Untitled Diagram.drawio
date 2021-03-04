@@ -1,23 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2021-03-04T14:56:59.826Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="BFhR92vejlgMrRAuvcOi" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-04T15:01:50.440Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="G0zLAGdRz-tGUke-39Ww" version="14.4.4" type="github">
   <diagram id="iNzfe0ApSXxjXUCwiRjT" name="Page-1">
     <mxGraphModel dx="1153" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="jT-Y5loIm_8YSGqEwft5-3" value="DOMListener" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;" vertex="1" parent="1">
-          <mxGeometry x="560" y="160" width="200" height="120" as="geometry" />
+          <mxGeometry x="520" y="160" width="200" height="120" as="geometry" />
         </mxCell>
         <mxCell id="jT-Y5loIm_8YSGqEwft5-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT-Y5loIm_8YSGqEwft5-4" target="jT-Y5loIm_8YSGqEwft5-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jT-Y5loIm_8YSGqEwft5-4" value="ExcelComponent" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;sketch=0;glass=0;" vertex="1" parent="1">
-          <mxGeometry x="320" y="160" width="200" height="120" as="geometry" />
+          <mxGeometry x="270" y="160" width="200" height="120" as="geometry" />
         </mxCell>
         <mxCell id="jT-Y5loIm_8YSGqEwft5-6" value="Добавление&amp;nbsp;&lt;br&gt;слушателей" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="560" y="300" width="90" height="30" as="geometry" />
+          <mxGeometry x="520" y="300" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jT-Y5loIm_8YSGqEwft5-7" value="Удаление &lt;br&gt;слушателей" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="300" width="80" height="30" as="geometry" />
+          <mxGeometry x="640" y="300" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jT-Y5loIm_8YSGqEwft5-9" value="Table" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="70" y="440" width="120" height="60" as="geometry" />
@@ -54,6 +54,39 @@
             <mxPoint x="555.5" y="277" as="sourcePoint" />
             <mxPoint x="456" y="437" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="jT-Y5loIm_8YSGqEwft5-19" value="Excel" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="600" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jT-Y5loIm_8YSGqEwft5-20" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.206;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jT-Y5loIm_8YSGqEwft5-9" target="jT-Y5loIm_8YSGqEwft5-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="580" as="sourcePoint" />
+            <mxPoint x="320" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jT-Y5loIm_8YSGqEwft5-21" value="Все классы будем&lt;br&gt;передавать в &lt;b&gt;excel&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="455" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jT-Y5loIm_8YSGqEwft5-22" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="jT-Y5loIm_8YSGqEwft5-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="490" as="sourcePoint" />
+            <mxPoint x="345" y="598" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jT-Y5loIm_8YSGqEwft5-23" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT-Y5loIm_8YSGqEwft5-11" target="jT-Y5loIm_8YSGqEwft5-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="491" as="sourcePoint" />
+            <mxPoint x="474.46000000000004" y="588.96" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jT-Y5loIm_8YSGqEwft5-24" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jT-Y5loIm_8YSGqEwft5-12" target="jT-Y5loIm_8YSGqEwft5-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="579" y="488" as="sourcePoint" />
+            <mxPoint x="509" y="588" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jT-Y5loIm_8YSGqEwft5-25" value="Вывести в HTML" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="750" width="110" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
