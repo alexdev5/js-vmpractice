@@ -1,5 +1,6 @@
 class Dom {
   constructor(selector) {
+    this.__events = [];
     // #app
     if (typeof selector === 'string') {
       this.$el = document.querySelector(selector);
@@ -22,13 +23,24 @@ class Dom {
   }
 
   append(node) {
+    if (node instanceof Dom) {
+      node = node.$el;
+    }
     // если есть такой метод
     if (Element.prototype.append) {
-      this.$el.append(node.$el);
+      this.$el.append(node);
     } else {
       // Если нет
-      this.$el.appendChild(node.$el);
+      this.$el.appendChild(node);
     }
+  }
+
+  on(event, callback) {
+    this.$el.addEventListener(event, callback);
+  }
+
+  off(event, callback) {
+    this.$el.removeEventListener(event, callback);
   }
 }
 

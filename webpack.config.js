@@ -51,7 +51,7 @@ module.exports = {
     // v5 - обновление стилей работает с коробки
     port: 3000,
     // hot: isDev,
-    overlay: true,
+    // overlay: true,
     open: true,
   },
   devtool: isDev ? 'source-map' : false,

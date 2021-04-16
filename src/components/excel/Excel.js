@@ -9,24 +9,28 @@ export class Excel {
 
   // Возвращает корневую ноду для экселя
   getRoot() {
-
     const $root = $.create('div', 'excel');
 
-    this.components.forEach(Component => {
+    // Преопределяем масиив компонентов, теперь в них содержится инстанс
+    this.components = this.components.map(Component => {
       const $el = $.create('div', Component.className);
-
       const component = new Component($el);
       $el.html(component.toHTML());
       $root.append($el);
-      // $root.insertAdjacentHTML('afterbegin', );
-    });
+      // DEBUG
+      if (component.name) {
+        window['c'+ component.name] = component;
+      }
+      //
 
+      return component;
+    });
     return $root;
   }
 
   render() {
-    // afterbegin, afterend beforeend beforebegin
-    // this.$el.insertAdjacentHTML('afterbegin', `<h1></h1>`);
     this.$el.append(this.getRoot());
+    // Запустим обработчик событий для компонентов
+    this.components.forEach(component => component.init());
   }
 }
